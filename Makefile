@@ -5,8 +5,16 @@ OBJ = $(SRC:.cc=.o)
 EXEC = eko
 PKG := example.com/EKO
 
-build:
-	GO111MODULE=on go build -o ./bin ./cmd/main.go
+
+all: $(EXEC)
+
+$(EXEC):
+	mkdir -p ./bin
+	GO111MODULE=on go build -o ./bin/$(EXEC) ./cmd/main.go
 
 run: 
-	./bin/main
+	./bin/$(EXEC)
+
+clean: 
+	rm -f ./bin/*
+	rm -r ./bin
