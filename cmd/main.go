@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/EKO/netmodules"
+	"github.com/egeyosunkaya/EKO/netmodules"
 	ui "github.com/gizak/termui/v3"
 )
 

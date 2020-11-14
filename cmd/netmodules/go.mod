@@ -1,4 +1,4 @@
-module github.com/EKO/netmodules
+module github.com/egeyosunkaya/EKO/netmodules
 
 go 1.15
 
